@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="js-ico.ico" type="image/x-icon">
+    <title>Formatação de textos</title>
+</head>
+<body>
+    <h1>Principais Formatações</h1>
+        <h2>Negrito / Destaque</h2>
+            <p>Nessa frase temos um <b>termo em negrito</b>, que está utilizando a tag &lt;b&gt;&lt;/b&gt; (sem semântica).</p>
+            <p>Nesta frase, também temos um <strong>termo em  Destaque</strong>, porém utilizando a tag &lt;strong&gt;&lt;/strong&gt; (semântica).</p>
+        <h2>Itálico / Ênfase</h2>
+            <p>Nesta frase, temos um <i>termo em itálico</i>, utilizando a tag &lt;i&gt;&lt;/i&gt; (sem semântica).</p>
+<!--ATENÇÃO
+Para facilitar a colocação das tag, clique em CTRL+SHIFT, P, e selecione a opção emmet:Wrap with Abbreviation, clique ENTER, depois digite apenas os caracteres da tag desejada, exemplo: i (para colocar trechos do texto em itálico), aperte ENTER para confirmar a fixação da tag.-->
+            <p>Nesta frase temos um <em>termo em Ênfase</em>, utilizando a tag &lt;em&gt;&lt;/em&gt; (semântica)</p>
+        <h2>Texto Marcado</h2>
+            <p>Podemos criar também um <mark>texto marcado</mark> usando a tag &lt;mark&gt;&lt;/mark&gt;</p>
+            <!--Geralmente a cor da tag <mark> é amarela, porém, podemos alterar a mesma utilizando CSS na própria tag. Darei um exmplo a seguir-->
+            <p>Vamos fazer a mudança na <mark style="background-color: lime;">cor da marcação do texto</mark>.</p>
+            <!--Outra opção seria criar um seletor em head com style, para a tag mark, deixando padrão então a cor escolhida para as marcações.-->
+        <h2>Texto GRANDE e pequeno</h2>
+            <p>Estamos criando um,   <big>texto grande</big>,  e um ,  <small>texto pequeno</small> ,   para esse paragráfo, utilizando as tags &lt;big&gt; e &lt;small&gt;.</p>
+            <!--A tag <big> se tornou obsoleta(provavelmente deixará de ter suporte para utilização no HTML5 e breve), já a tag <small> continuará em plena usuabilidade na versão HTML5-->
+        <h2>Texto deletado</h2>
+            <p>Podemos marcar um <del>texto como excluído</del> para indicar que ele deve ser lido, mas não considerado, utiliza-se para isso a tag &lt;del&gt;.</p>
+        <h2>Texto inserido</h2>
+            <p>Podemos marcar um <ins>texto como inserido</ins> para dar uma ênfase e indicar que ele foi adicionado depois, podemos utilizar para tanto a tag &lt;ins&gt;.</p>
+            <p>Ou também, existe para essa função de <u>texto sublinhado</u> a tag&lt;u&gt;, (sem semântica).</p>
+        <h2>Texto sobrescrito</h2>
+            <p>Para inserir coisas do tipo x<sup>20</sup>+3, com a tag &lt;sup&gt;.</p>
+        <h2>Texto subscrito</h2>
+            <p>Para inserir coisas do tipo H<sub>2</sub>O, com a tag &lt;sub&gt;.</p>
+            
+</body>
+</html>

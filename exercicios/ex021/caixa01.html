@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelos de Caixas</title>
+    <style>
+        h1{
+            background-color: lightgreen;
+            height: 300px;
+            width: 300px;
+
+            /*border-width: 10px;
+            border-style: solid;
+            border-color: darkseagreen;   < simplificando o border>*/
+            border: 10px solid darkseagreen; 
+
+            /*padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;      < simplificando o padding>*/
+                
+            padding: 10px 10px 10px 10px; /* SE AS QUATRO MEDIDAS FOREM IGUAIS VC PODE COLOCAR APENAS UMA VEZ. EX: padding: 10px; */
+
+            /*margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;    < simplificando a margin*/
+            margin: 15px auto 15px auto;
+
+            /*outline-width: 5px;
+            outline-style: dashed;
+            outline-color: gold;    < simplificando o outline*/
+            outline: 3px dashed gold;
+        }
+        a{
+            border: 3px solid darkviolet;
+
+            padding: 1px;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixas box-level</h1>
+        <p>Parágrafos também são exemplos de box-level, mas o <a href="#">os links são exemplos de caixas inbox-level</a>. Vamos ver como tudo isso funciona.</p>
+</body>
+</html>

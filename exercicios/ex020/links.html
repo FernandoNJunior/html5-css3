@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <!-- Pseudo-classe são palavras que definem o estado de elementos dentro do html-->
+    <!--Pseudo-elementos agem diretamente no conteudo periférico dos elementos(classes, elementos, id)-->
+    <style>
+
+        /* Seletores personalizados
+            #  = id
+            .  = class
+            :  = pseudo-class
+            :: = pseudo-elemento
+            >  = children
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            color: red;
+            text-decoration: none;
+            font-weight: bolder;
+        }
+
+        a:visited{
+            color: darkred;
+        }
+
+        a:hover{
+            color: blue;
+            text-decoration: underline;
+        }
+
+        a:active{
+            color: yellow ;
+        }
+
+        .importante{
+            background-color: rgba(235, 99, 99, 0.534);
+            width: 135px;
+        }
+
+        .importante::before{
+            content: '⇒' ;
+            text-decoration: none;
+            font-weight: normal;
+            color: rgb(48, 44, 44);
+        }
+
+        .importante::after{ /* :: é sinal de pseudo-elemento*/
+            content: '⇐';   /*content significa conteudo*/
+            text-decoration: none;
+            font-weight: normal;
+            color: rgb(48, 44, 44);
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul type="circle";>
+        <li><a href="https://login.clear.com.br/pit/login" target="_blank">Corretora Clear</a></li>
+        <li><a href="https://www.youtube.com/channel/UCrWvhVmt0Qac3HgsjQK62FQ" target="_blank">Canal curso em video</a></li>
+        <li class="importante"><a href="https://www.universoead.com.br/" target="_blank">Universo EAD</a></li>
+    </ul>
+
+</body>
+</html>

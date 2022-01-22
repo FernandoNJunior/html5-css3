@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras Formatações</title>
+    <link rel="shortcut icon" href="js-ico.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Outras formatações</h1>
+        <h2>Código-fonte / Pré-formatação</h2>
+            <p>O comando <code>document.getElemntById('teste')</code> é escrito em liguagem JavaScript, utilizando a tag &lt;code&gt;.  A tag &lt;code&gt; traz o texto para uma fonte monoespaçada, que facilita a leitura do código.</p>
+
+            <!--As próximas linhas de códigos serão em linguagem python-->
+
+            <pre><!--A tag <pre> faz com que imprima exatamente como está digitado aqui no VsCode.-->
+                <code>
+    num = int(input('Digite um número'))
+    if num % 2 == 0
+        print(f'O número é PAR')
+    else:
+        print(f'O número é ÍMPAR')
+    print('Fim do programa')
+                </code>
+            </pre>
+            <p>No trecho de código acima, envelopamos o código em uma tag &lt;code&gt;, e após isso envelopamos o trecho + &lt;code&gt; dentro da tag &lt;pre&gt; </p>
+<!--ATENÇÃO
+Para arrastar um trecho do código/texto digitado para frente ou para trás todo de uma vez, basta selecionar a parte desejada, clicar em SHIFT+TAB (para trás) ou TAB (para frente)-->
+        <h2>Citações Simples</h2>
+            <p>Como diria o pai de um amigo meu: <q>o computador é um burro muito rápido.</q></p>
+            <p>(Utilizamos para essa citação &uarr; a tag &lt;q&gt;, que trás para o texto as aspas)</p>
+        <h2>Citações Completas</h2>
+            <p>Segundo Jeff Noble, no seu livro HTML para leigos:</p>
+            <!--vamos utilizar a tag <blockqoute> para fazer uma citação completa-->
+                <blockquote cite="https://www.google.com.br/books/edition/HTML_XHTML_e_CSS_Para_Leigos/E8ZtDwAAQBAJ?hl=pt-BR&gbpv=1&dq=html+para+leigos&printsec=frontcover">
+                    A diferença entre elementos inline e um bloco de texto é importante. Os elementos HTML neste capítulo descrevem os blocos de texto.
+                </blockquote>
+            <p>Utilizamos para fazer a citação acima a tag &lt;blockqoute&gt;, ela é responsável por deslocar a citação e também fazer uma quebra de linha.</p>
+        <h2>Abreviações</h2>
+            <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando! <br>(O efeito que criamos de mostrar ao usuário o que significa a abreviação, é com a tag &lt;abbr&gt;, ela da a opção de colocar um title para que, ao passar o mouse em cima apareça a descrição (title) da abreviação colocada.)</p>
+        <h2>Texto invertido</h2>
+            <p> <bdo dir="rtl">Estou aprendendo a criar coisa em HTML.</bdo><br> Para criar esse efeito de texto invertido utilizamos a tag &lt;bdo&gt;, que pode estar com r ou l. (&lt;bdo:l&gt; ou &lt;bdo:r&gt;)</p>
+</body>
+</html>
